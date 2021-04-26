@@ -1,0 +1,14 @@
+@import '../../styles/common';
+
+.header {
+  &__container {
+    background: black
+  }
+
+  &__item {
+    font-family: 'Black Ops One';
+    font-size: 100px;
+    color: white;
+    padding-left: 50px;
+  }
+}
