@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './header.module.scss'
+import { animHeader } from '../../utils/animation'
 
 export const Header: React.FC = () => {
+  useEffect(() => {
+    animHeader(`.${styles.header__item}`, `.${styles.header__container}`)
+    }, []
+  )
+
   return (
     <div className={styles.header__container}>
       <div className={styles.header__item}>BSX_MARS</div>

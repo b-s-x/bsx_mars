@@ -2,13 +2,30 @@
 
 .header {
   &__container {
-    background: black
+    background: black;
+    height: 100vh;
+    overflow: hidden;
   }
 
   &__item {
     font-family: 'Black Ops One';
-    font-size: 100px;
+    font-size: 80px;
     color: white;
     padding-left: 50px;
   }
 }
+
+// .header {
+//     &__container {
+//       // background: black;
+//       // height: 100vh;
+//       overflow: hidden;
+//     }
+  
+//     &__item {
+//       font-family: 'Black Ops One';
+//       font-size: 80px;
+//       // color: white;
+//       padding-left: 50px;
+//     }
+//   }
