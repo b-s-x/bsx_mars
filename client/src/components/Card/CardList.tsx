@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import gsap from 'gsap'
 import { animCardList } from '../../utils/animation'
 import styles from './card_list.module.scss'
 
