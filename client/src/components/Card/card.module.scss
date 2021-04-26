@@ -1,0 +1,12 @@
+@import '../../styles/common';
+
+.card__box {
+  // border: 1px solid red;
+  padding: 140px;
+
+  // position: relative;
+  // width: clamp(410px, 40%, 70%);
+  box-shadow: $card-shadow;
+  border-radius: 20px;
+  // padding: 40px;
+}

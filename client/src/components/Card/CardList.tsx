@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { animCardList } from '../../utils/animation'
+import { Card } from './Card'
 import styles from './card_list.module.scss'
 
 export const CardList: React.FC = () => {
@@ -8,6 +9,13 @@ export const CardList: React.FC = () => {
   }, [])
 
   return (
-    <div className={styles.card__container}></div>
+    <div className={styles.card__container}>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+    </div>
   )
 }
