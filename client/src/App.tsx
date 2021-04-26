@@ -3,7 +3,7 @@ import './App.scss'
 
 import { Header } from './components/Header/Header'
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header/>
