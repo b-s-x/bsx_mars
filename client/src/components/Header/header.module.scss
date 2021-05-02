@@ -1,31 +1,28 @@
-@import '../../styles/common';
+@import "../../styles/common";
 
 .header {
   &__container {
     background: black;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+  }
+
+  &__box {
+    font-family: "Black Ops One";
+    font-size: 200px;
+    // position: absolute;
+    // top: 50%;
+    // width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
   }
 
   &__item {
-    font-family: 'Black Ops One';
-    font-size: 80px;
     color: white;
     padding-left: 50px;
   }
 }
-
-// .header {
-//     &__container {
-//       // background: black;
-//       // height: 100vh;
-//       overflow: hidden;
-//     }
-  
-//     &__item {
-//       font-family: 'Black Ops One';
-//       font-size: 80px;
-//       // color: white;
-//       padding-left: 50px;
-//     }
-//   }
