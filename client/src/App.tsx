@@ -4,7 +4,7 @@ import { CardList } from './components/Card/CardList'
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className='app'>
       <Header/>
       <CardList/>
     </div>
