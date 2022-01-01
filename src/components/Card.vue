@@ -67,6 +67,7 @@ const stopRotate = () => {
 
   &_item {
     box-shadow: $card-shadow;
+    widows: 100%;
     height: 100%;
     box-shadow: $card-shadow;
     border-radius: 35px;
