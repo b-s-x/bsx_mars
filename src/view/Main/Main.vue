@@ -1,25 +1,37 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import Header from '@/components/Header.vue';
 import Card from '@/components/Card.vue';
+import { animationCardList } from '../../hooks/animation/index';
+
+onMounted(() => animationCardList('.card_container'))
 
 </script>
 
 <template>
   <div class="box">
-    <Card class="card" />
+    <Header />
+    <div class="card_container">
+      <Card class="card" />
+    </div>
   </div>
 </template>
 
 <style lang="scss">
 
-.box {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card {
+  height: 300px;
+  width: 300px;
+
+  &_container {
+    opacity: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 20px 50px;
+    gap: 20px 40px;
+    display: none;
+  }
 }
 
-.card {
-  width: 400px;
-  height: 400px;
-}
 </style>
