@@ -7,7 +7,7 @@ const props = defineProps({
     default: 15,
   },
   initialTimeTransition: {
-    type: String,
+    type: [String, Number],
     default: '0.2'
   }
 });
@@ -29,7 +29,7 @@ const startRotate = (event: any): void => {
   const y: number = (event.offsetX - halfWidth) / Number(degrees);
 
   transform.value = `rotateY(${y}deg) rotateX(${-x}deg)`;
-  transition.value = `transform ${initialTimeTransition}s`;
+  transition.value = `transform ${String(initialTimeTransition)}s`;
 };
 
 const stopRotate = () => {
