@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import Header from '@/components/Header.vue';
 import Card from '@/components/Card.vue';
 import { animationCardList } from '../../hooks/animation/index';
-import landingConceptGIF from '../../assets/media/landing_concept.gif';
+import landingConceptMP4 from '../../assets/media/landing_concept.mp4';
 
 onMounted(() => animationCardList('.card_container'))
 
@@ -14,11 +14,21 @@ onMounted(() => animationCardList('.card_container'))
     <Header />
     <div class="card_container">
       <Card class="card">
-        <img
+        <video
+          width="500"
+          height="300"
           class="card_img"
-          :src="landingConceptGIF"
-          alt="landing_concept"
+          playsinline
+          autoplay
+          muted
+          loop
         >
+          <source
+            :src="landingConceptMP4"
+            type="video/mp4"
+            alt="landing_concept"
+          >
+        </video>
       </Card>
     </div>
   </div>
